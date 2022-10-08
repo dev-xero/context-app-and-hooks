@@ -1,13 +1,16 @@
 import NavBar from "./components/NavBar";
 import BookList from "./components/BookList";
+import { ThemeContextProvider } from "./context/ThemeContext";
 
 const App = () => {
   return (
     <div className="App">
-      <NavBar />
-      <BookList />
+      <ThemeContextProvider>
+        <NavBar />
+        <BookList />
+      </ThemeContextProvider>
     </div>
-  );
+  )
 }
 
 export default App;
