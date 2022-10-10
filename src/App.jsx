@@ -1,6 +1,7 @@
-import NavBar from "./components/NavBar";
-import BookList from "./components/BookList";
-import { ThemeContextProvider } from "./context/ThemeContext";
+import NavBar from './components/NavBar'
+import BookList from './components/BookList'
+import ThemeToggle from './components/ThemeToggle'
+import { ThemeContextProvider } from './context/ThemeContext'
 
 const App = () => {
   return (
@@ -8,9 +9,10 @@ const App = () => {
       <ThemeContextProvider>
         <NavBar />
         <BookList />
+        <ThemeToggle />
       </ThemeContextProvider>
     </div>
   )
 }
 
-export default App;
+export default App
